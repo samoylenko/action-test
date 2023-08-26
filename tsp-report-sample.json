@@ -1,0 +1,243 @@
+[
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js"
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 2
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 4
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 6
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 15
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 28
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S1481",
+        "type": "STYLE",
+        "severity": "MINOR",
+        "summary": "Remove the declaration of the unused 'unused' variable.",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 28
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S1854",
+        "type": "STYLE",
+        "severity": "MAJOR",
+        "summary": "Remove this useless assignment to variable \"unused\".",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 28
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 30
+            }
+        ]
+    },
+    {
+        "scannerId": "sonar",
+        "ruleId": "javascript:S3504",
+        "type": "STYLE",
+        "severity": "CRITICAL",
+        "summary": "Unexpected var, use let or const instead.",
+        "description": "Replace 'var' with 'let'",
+        "location": [
+            {
+                "filePath": "index.js",
+                "lineNumber": 46
+            }
+        ]
+    },
+    {
+        "scannerId": "dependency-check",
+        "ruleId": "cpe:2.3:a:lodash:lodash:4.17.20:*:*:*:*:*:*:*",
+        "type": "COMPOSITION",
+        "severity": "CRITICAL",
+        "summary": "lodash:4.17.20 - 4 vulnerabilities (pkg:npm/lodash@4.17.20)",
+        "description": "`lodash` versions prior to 4.17.21 are vulnerable to Command Injection via the template function., All versions of package lodash prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions. Steps to reproduce (provided by reporter Liyuan Chen): var lo = require('lodash'); function build_blank (n) { var ret = \"1\" for (var i = 0; i < n; i++) { ret += \" \" } return ret + \"1\"; } var s = build_blank(50000) var time0 = Date.now(); lo.trim(s) var time_cost0 = Date.now() - time0; console.log(\"time_cost0: \" + time_cost0) var time1 = Date.now(); lo.toNumber(s) var time_cost1 = Date.now() - time1; console.log(\"time_cost1: \" + time_cost1) var time2 = Date.now(); lo.trimEnd(s) var time_cost2 = Date.now() - time2; console.log(\"time_cost2: \" + time_cost2), Lodash versions prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions., Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+        "cweId": [
+            77,
+            94,
+            400,
+            1333
+        ],
+        "location": [
+            {
+                "filePath": "package-lock.json"
+            }
+        ]
+    },
+    {
+        "scannerId": "semgrep",
+        "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write",
+        "type": "SECURITY",
+        "severity": "MAJOR",
+        "summary": "Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+        "description": "Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML.",
+        "cweId": [
+            79
+        ],
+        "location": [
+            {
+                "filePath": "/src/index.js",
+                "lineNumber": 49
+            }
+        ]
+    },
+    {
+        "scannerId": "semgrep",
+        "ruleId": "javascript.express.security.audit.xss.pug.explicit-unescape.template-explicit-unescape",
+        "type": "SECURITY",
+        "severity": "MAJOR",
+        "summary": "Detected an explicit unescape in a Pug template, using either '!=' or '!{...}'. If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. If you must do this, ensure no external data can reach this location.",
+        "description": "Detected an explicit unescape in a Pug template, using either '!=' or '!{...}'. If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. If you must do this, ensure no external data can reach this location.",
+        "cweId": [
+            79
+        ],
+        "location": [
+            {
+                "filePath": "/src/views/hello.pug",
+                "lineNumber": 5
+            }
+        ]
+    },
+    {
+        "scannerId": "semgrep",
+        "ruleId": "javascript.express.security.injection.tainted-sql-string.tainted-sql-string",
+        "type": "SECURITY",
+        "severity": "MAJOR",
+        "summary": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using an object-relational mapper (ORM) such as Sequelize which will protect your queries.",
+        "description": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using an object-relational mapper (ORM) such as Sequelize which will protect your queries.",
+        "cweId": [
+            79
+        ],
+        "location": [
+            {
+                "filePath": "/src/index.js",
+                "lineNumber": 48
+            }
+        ]
+    },
+    {
+        "scannerId": "semgrep",
+        "ruleId": "javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage",
+        "type": "SECURITY",
+        "severity": "MAJOR",
+        "summary": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies.",
+        "description": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies.",
+        "cweId": [
+            352
+        ],
+        "location": [
+            {
+                "filePath": "/src/index.js",
+                "lineNumber": 30
+            }
+        ]
+    },
+    {
+        "scannerId": "semgrep",
+        "ruleId": "yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.third-party-action-not-pinned-to-commit-sha",
+        "type": "SECURITY",
+        "severity": "MAJOR",
+        "summary": "An action sourced from a third-party repository on GitHub is not pinned to a full length commit SHA. Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload.",
+        "description": "An action sourced from a third-party repository on GitHub is not pinned to a full length commit SHA. Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload.",
+        "cweId": [
+            1357
+        ],
+        "location": [
+            {
+                "filePath": "/src/.github/workflows/main.yml",
+                "lineNumber": 25
+            }
+        ]
+    }
+]

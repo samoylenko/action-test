@@ -1,0 +1,336 @@
+{
+    "version": "2.1.0",
+    "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "sonar"
+                }
+            },
+            "results": [
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 2
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 4
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 6
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 15
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 28
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Remove the declaration of the unused 'unused' variable."
+                    },
+                    "ruleId": "javascript:S1481",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 28
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Remove this useless assignment to variable \"unused\"."
+                    },
+                    "ruleId": "javascript:S1854",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 28
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Unexpected var, use let or const instead."
+                    },
+                    "ruleId": "javascript:S3504",
+                    "level": "none",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "index.js"
+                                },
+                                "region": {
+                                    "startLine": 46
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tool": {
+                "driver": {
+                    "name": "dependency-check"
+                }
+            },
+            "results": [
+                {
+                    "message": {
+                        "text": "lodash:4.17.20 - 4 vulnerabilities (pkg:npm/lodash@4.17.20)"
+                    },
+                    "ruleId": "cpe:2.3:a:lodash:lodash:4.17.20:*:*:*:*:*:*:*",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "package-lock.json"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tool": {
+                "driver": {
+                    "name": "semgrep"
+                }
+            },
+            "results": [
+                {
+                    "message": {
+                        "text": "Detected directly writing to a Response object from user-defined input. This bypasses any HTML escaping and may expose your application to a Cross-Site-scripting (XSS) vulnerability. Instead, use 'resp.render()' to render safely escaped HTML."
+                    },
+                    "ruleId": "javascript.express.security.audit.xss.direct-response-write.direct-response-write",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/src/index.js"
+                                },
+                                "region": {
+                                    "startLine": 49
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Detected an explicit unescape in a Pug template, using either '!=' or '!{...}'. If external data can reach these locations, your application is exposed to a cross-site scripting (XSS) vulnerability. If you must do this, ensure no external data can reach this location."
+                    },
+                    "ruleId": "javascript.express.security.audit.xss.pug.explicit-unescape.template-explicit-unescape",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/src/views/hello.pug"
+                                },
+                                "region": {
+                                    "startLine": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Detected user input used to manually construct a SQL string. This is usually bad practice because manual construction could accidentally result in a SQL injection. An attacker could use a SQL injection to steal or modify contents of the database. Instead, use a parameterized query which is available by default in most database engines. Alternatively, consider using an object-relational mapper (ORM) such as Sequelize which will protect your queries."
+                    },
+                    "ruleId": "javascript.express.security.injection.tainted-sql-string.tainted-sql-string",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/src/index.js"
+                                },
+                                "region": {
+                                    "startLine": 48
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "A CSRF middleware was not detected in your express application. Ensure you are either using one such as `csurf` or `csrf` (see rule references) and/or you are properly doing CSRF validation in your routes with a token or cookies."
+                    },
+                    "ruleId": "javascript.express.security.audit.express-check-csurf-middleware-usage.express-check-csurf-middleware-usage",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/src/index.js"
+                                },
+                                "region": {
+                                    "startLine": 30
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "An action sourced from a third-party repository on GitHub is not pinned to a full length commit SHA. Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload."
+                    },
+                    "ruleId": "yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.third-party-action-not-pinned-to-commit-sha",
+                    "level": "error",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/src/.github/workflows/main.yml"
+                                },
+                                "region": {
+                                    "startLine": 25
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

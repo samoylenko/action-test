@@ -1,0 +1,17 @@
+name: 'ScanProject Open Source'
+description: 'Scan Project bla bla bla'
+inputs:
+  project-directory:
+    description: 'Code Dir'
+    required: true
+    default: '.'
+outputs:
+  report:
+    description: 'Scan report'
+runs:
+  using: 'docker'
+  image: 'docker://docker.io/scanproject/standalone:latest'
+  args:
+    - 'scan'
+    - '--format=sarif'
+    - ${{ inputs.project-directory }}
