@@ -19,9 +19,7 @@ jobs:
       - name: Scanproject Action live!
         uses: ./
         id: scanproject
-      - name: Get the output time
-        run: echo "The time was ${{ steps.scanproject.outputs.report }}"
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: snyk-code.sarif
+          sarif_file: tsp-report.sarif
