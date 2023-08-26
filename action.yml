@@ -10,7 +10,7 @@ outputs:
     description: 'Scan report'
 runs:
   using: 'docker'
-  image: 'docker://docker.io/scanproject/standalone:latest'
+  image: 'docker://docker.io/scanproject/standalone:next'
   args:
     - 'scan'
     - '--format=sarif'
