@@ -21,6 +21,8 @@ jobs:
       - name: Scanproject Action live!
         uses: ./
         id: scanproject
+      - name: test summary
+        run: echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
       - name: Store report for debugging
         uses: actions/upload-artifact@v3
         with:
@@ -30,3 +32,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: tsp-report.sarif
+      - name: env
+        run: env | grep GITHUB
