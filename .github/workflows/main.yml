@@ -21,7 +21,6 @@ jobs:
       - name: Scanproject Action live!
         uses: ./
         id: scanproject
-        run: echo '### 111 Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
       - name: test summary
         run: echo '### 222 Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
       - name: Store report for debugging
